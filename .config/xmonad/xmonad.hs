@@ -273,7 +273,6 @@ myStartupHook = do
     dynStatusBarStartup barCreator barDestroyer
     -- spawnOnce ".config/dzen/standalone/dzen2/conky/main.sh"
     spawnOnce "sh .fehbg"
-    spawnOnce "dunst"
     spawnOnce "parcellite"
     -- spawnOnce ".config/dzen/standalone/dzen2/conky/main.sh"
     spawnOnce "xfce4-power-manager"
