@@ -234,7 +234,7 @@ myManageHook = composeAll . concat $
     where
 
         myFloats         = ["Lxappearance", "Tor Browser"]
-        myCenterFloats   = ["Galculator", "Gcolor2", "Xmessage"]
+        myCenterFloats   = ["Galculator", "Gcolor2", "Putty", "Xmessage"]
         myTitleFloats    = ["Громкость"]
         myResourceFloats = []
         myIgnores        = ["desktop_window", "kdesktop", "conky", "stalonetray"]
@@ -270,6 +270,7 @@ myStartupHook = do
     setWMName "LG3D"
     spawnOnce "workrave"
     -- Cur.setDefaultCursor Cur.xC_crosshair
+    Cur.setDefaultCursor Cur.xC_left_ptr
     dynStatusBarStartup barCreator barDestroyer
     -- spawnOnce ".config/dzen/standalone/dzen2/conky/main.sh"
     spawnOnce "sh .fehbg"
